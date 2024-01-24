@@ -10,7 +10,8 @@ class Linked_List_Node:
 
 
 def later_node(self, i):  # O(i)
-    if i == 0: return self
+    if i == 0: 
+        return self
     assert self.next
     return self.next.later_node(i - 1)
 
